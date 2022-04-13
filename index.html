@@ -21,19 +21,19 @@
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Staff picks</a>
+              <a class="nav__link" id="Staff-id">Staff picks</a>
             </li>
             <li>
-              <a class="nav__link">Events</a>
+              <a class="nav__link" id="Events-id">Events</a>
             </li>
             <li>
-              <a class="nav__link">Become a member</a>
+              <a class="nav__link" id="Member-id">Become a member</a>
             </li>
             <li>
-              <a class="nav__link">About</a>
+              <a class="nav__link" id="About-id">About</a>
             </li>
             <li>
-              <a class="nav__link">Contacts</a>
+              <a class="nav__link" id="Contacts-id">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -44,7 +44,11 @@
           your development knowledge, or just use this lovely spot to work or
           study. This is a cool place for cool students!
         </p>
-        <!-- <img src="./images/inside_the_library.png" alt="Illustration 'Inside the library'" class="header__image" > -->
+        <img
+          src="./images/inside_the_library.png"
+          alt="Illustration 'Inside the library'"
+          class="header__image"
+        />
         <div class="header__footer">
           <a class="header__link">About the library &darr;</a>
           <p class="header__address">
@@ -54,7 +58,7 @@
       </header>
 
       <main class="content">
-        <section class="staff">
+        <section class="staff" href="#Staff-id">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <!-- Wrap those cards! -->
@@ -127,7 +131,7 @@
         </section>
 
         <section class="events">
-          <div class="events__content">
+          <div class="events__content" href="#Events-id">
             <h3 class="events__heading">Upcoming events:</h3>
             <h2 class="events__title">
               In honor of Joan Feynman: Women in astrophysics
@@ -212,7 +216,7 @@
           <!-- Start creating the composition here -->
         </section>
 
-        <section class="membership">
+        <section class="membership" href="#Member-id">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
@@ -267,7 +271,8 @@
             </li>
           </ul>
         </section>
-        <section class="about">
+
+        <section class="about" href="#About-id">
           <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">

@@ -3,6 +3,9 @@
   min-width: 1100px;
   max-width: 1180px;
   margin: 0 auto;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .header {
@@ -16,17 +19,26 @@
   box-sizing: border-box;
 }
 
-/* .nav {
-  Add flex properties here
-} */
+.nav {
+  /* Add flex properties here */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* not sure about the align-items */
+}
 
-/* .logo {
-} */
+.logo {
+  width: 190px;
+  height: 60px;
+}
 
 .nav__links {
   list-style: none;
   padding-left: 0;
   margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
 }
 
 .nav__link {
@@ -36,23 +48,32 @@
 }
 
 /* Add the hover state styles for .nav__link here */
+.nav__link:hover {
+  color: #1f69c9;
+}
 
 .header__title {
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
   margin: 150px 0 0;
+  max-width: 544px;
 }
 
 .header__description {
   font-size: 20px;
   line-height: 30px;
   margin: 32px 0 0;
+  max-width: 456px;
 }
 
 .header__image {
   /* Write styles here */
   z-index: 1;
+  max-width: 636px;
+  top: 135px;
+  right: 20px;
+  position: absolute;
 }
 
 .header__footer {
@@ -73,6 +94,9 @@
 }
 
 /* Add the hover state styles for .header__link here */
+.header__link:hover {
+  color: #1f69c9;
+}
 
 .header__address {
   margin: 0;
@@ -114,6 +138,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  width: 320px;
+  height: 420px;
 }
 
 .card__title {
@@ -184,10 +210,14 @@
 
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
+  height: 24px;
+  width: 24px;
 }
 
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
+  height: 24px;
+  width: 24px;
 }
 
 .event-info__text {
@@ -340,6 +370,7 @@
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  max-width: 154px;
 }
 
 .about__content {
