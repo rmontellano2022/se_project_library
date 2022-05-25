@@ -21,16 +21,16 @@
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link" id="Staff-id">Staff picks</a>
+              <a class="nav__link" href="#staff">Staff picks</a>
             </li>
             <li>
-              <a class="nav__link" id="Events-id">Events</a>
+              <a class="nav__link" href="#events">Events</a>
             </li>
             <li>
-              <a class="nav__link" id="Member-id">Become a member</a>
+              <a class="nav__link" href="#member">Become a member</a>
             </li>
             <li>
-              <a class="nav__link" id="About-id">About</a>
+              <a class="nav__link" href="#about">About</a>
             </li>
             <li>
               <a class="nav__link" id="Contacts-id">Contacts</a>
@@ -58,79 +58,82 @@
       </header>
 
       <main class="content">
-        <section class="staff" href="#Staff-id">
+        <section class="staff" id="staff">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <!-- Wrap those cards! -->
           <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-          <li class="card">
-            <div class="card__content">
-              <h3 class="card__title">Introduction to Algorithms</h3>
-              <p class="card__text">
-                The name of this book is self-explanatory; it's a proper
-                introduction to algorithms! Introduction to Algorithms, or CLRS,
-                in reference to the authors' last names, goes in-depth and
-                covers a range of algorithms across several self-contained
-                chapters.
-              </p>
-              <p class="card__footer">
-                Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
-                Clifford Stein
-              </p>
-            </div>
-          </li>
+          <ul class="staff__cards">
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">Introduction to Algorithms</h3>
+                <p class="card__text">
+                  The name of this book is self-explanatory; it's a proper
+                  introduction to algorithms! Introduction to Algorithms, or
+                  CLRS, in reference to the authors' last names, goes in-depth
+                  and covers a range of algorithms across several self-contained
+                  chapters.
+                </p>
+                <p class="card__footer">
+                  Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
+                  Clifford Stein
+                </p>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  The Structure and Interpretation of Computer Programs (SICP)
+                </h3>
+                <p class="card__text">
+                  This is one of the best books for learning the fundamentals of
+                  programming. Featured by MIT in one of their foundational
+                  programming courses, SICP is a general-purpose programming
+                  book that uses Scheme to illustrate various programming
+                  concepts.
+                </p>
+                <p class="card__footer">
+                  Harold Abelson, Gerald Jay Sussman, Julie Sussman
+                </p>
+              </div>
+            </li>
 
-          <li class="card">
-            <div class="card__content">
-              <h3 class="card__title">
-                The Structure and Interpretation of Computer Programs (SICP)
-              </h3>
-              <p class="card__text">
-                This is one of the best books for learning the fundamentals of
-                programming. Featured by MIT in one of their foundational
-                programming courses, SICP is a general-purpose programming book
-                that uses Scheme to illustrate various programming concepts.
-              </p>
-              <p class="card__footer">
-                Harold Abelson, Gerald Jay Sussman, Julie Sussman
-              </p>
-            </div>
-          </li>
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  The Clean Coder: A Code of Conduct for Professional
+                  Programmers
+                </h3>
+                <p class="card__text">
+                  Compiled by seasoned software engineer and author Robert C.
+                  Martin (also known as Uncle Bob), this book covers the
+                  techniques and tools of true software craftsmanship. It
+                  explains how to write clean code and demonstrates how to
+                  cultivate the attitude of a skilled, professional programmer.
+                </p>
+                <p class="card__footer">Steve McConnell</p>
+              </div>
+            </li>
 
-          <li class="card">
-            <div class="card__content">
-              <h3 class="card__title">
-                The Clean Coder: A Code of Conduct for Professional Programmers
-              </h3>
-              <p class="card__text">
-                Compiled by seasoned software engineer and author Robert C.
-                Martin (also known as Uncle Bob), this book covers the
-                techniques and tools of true software craftsmanship. It explains
-                how to write clean code and demonstrates how to cultivate the
-                attitude of a skilled, professional programmer.
-              </p>
-              <p class="card__footer">Steve McConnell</p>
-            </div>
-          </li>
-
-          <li class="card">
-            <div class="card__content">
-              <h3 class="card__title">
-                Code Complete: A Practical Handbook of Software Construction
-              </h3>
-              <p class="card__text">
-                Want to know how to write robust code irrespective of the
-                architecture behind your chosen programming language? Then
-                consider reading Code Complete: A Practical Handbook of Software
-                Construction. It comprehensively covers everything related to
-                good code structure.
-              </p>
-              <p class="card__footer">Steve McConnell</p>
-            </div>
-          </li>
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  Code Complete: A Practical Handbook of Software Construction
+                </h3>
+                <p class="card__text">
+                  Want to know how to write robust code irrespective of the
+                  architecture behind your chosen programming language? Then
+                  consider reading Code Complete: A Practical Handbook of
+                  Software Construction. It comprehensively covers everything
+                  related to good code structure.
+                </p>
+                <p class="card__footer">Steve McConnell</p>
+              </div>
+            </li>
+          </ul>
         </section>
 
-        <section class="events">
+        <section class="events" id="events">
           <div class="events__content" href="#Events-id">
             <h3 class="events__heading">Upcoming events:</h3>
             <h2 class="events__title">
@@ -216,7 +219,7 @@
           <!-- Start creating the composition here -->
         </section>
 
-        <section class="membership" href="#Member-id">
+        <section class="membership" id="member">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
@@ -272,7 +275,7 @@
           </ul>
         </section>
 
-        <section class="about" href="#About-id">
+        <section class="about" id="about">
           <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">
@@ -293,10 +296,15 @@
               the American Geophysical Union.
             </p>
           </div>
-          <!-- <div class="about__circle"></div> -->
+          <div class="about__circle"></div>
         </section>
       </main>
       <footer class="footer">
+        <div class="footer__column"></div>
+
+        <div class="footer__column"></div>
+
+        <div class="footer__column"></div>
         <!-- The time to mark up the footer has come, you can do it 💪 -->
       </footer>
     </div>
