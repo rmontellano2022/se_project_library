@@ -23,12 +23,12 @@
   /* Add flex properties here */
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   /* not sure about the align-items */
 }
 
 .logo {
-  width: 190px;
+  width: 196px;
   height: 60px;
 }
 
@@ -37,7 +37,7 @@
   padding-left: 0;
   margin-top: 8px;
   display: flex;
-  justify-content: center;
+  align-items: center;
   column-gap: 20px;
 }
 
@@ -133,7 +133,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 760px;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 40px;
 }
 
@@ -251,6 +251,9 @@
 }
 
 /* Add the hover state styles for .events__more here */
+.events__more:hover {
+  color: #1f69c9;
+}
 
 .events__cover {
   flex-grow: 1;
@@ -355,6 +358,10 @@
   margin-right: 40px;
 }
 
+.step:last-child {
+  margin-right: 0;
+}
+
 .step__title {
   margin: 0;
   font-size: 20px;
@@ -408,6 +415,10 @@
   margin-bottom: 32px;
 }
 
+.about__paragraph:last-child {
+  margin-bottom: 0;
+}
+
 .about__circle {
   background-color: #2f80ed;
   width: 495px;
@@ -421,7 +432,7 @@
 
 .footer {
   box-sizing: border-box;
-  padding: 80px 60px 102px;
+  padding: 60px 102px 60px 80px;
   background-color: #1f1f1f;
 }
 
@@ -461,8 +472,14 @@
   padding-bottom: 16px;
 }
 
+.footer__list-item:last-child {
+  padding-bottom: 0;
+}
+
 .footer__column-heading {
   padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer__column-link {
@@ -484,5 +501,6 @@
 
 .footer__copyright {
   color: #f2f2f2;
-  justify-content: flex-end;
+  margin-top: 0;
+  margin-bottom: 0;
 }
